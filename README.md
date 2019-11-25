@@ -1,2 +1,2 @@
-# SimpleGame
-trials game to investigate pygame
+# SimpleGame 
+trial game to investigate pygame

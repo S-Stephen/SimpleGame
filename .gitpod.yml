@@ -1,11 +1,11 @@
-image: gitpod/workspace-full-vnc
+image:
+  file: .gitpod.Dockerfile
+
 ports:
   - port: 5900
     onOpen: ignore
   - port: 6080
     onOpen: open-preview
 tasks:
-# from https://github.com/techwithtim/Snake-Game/blob/master/.gitpod.yml
-  - init: python3 -m pip install -U pygame --user
-    command: python3 -m pygame.examples.aliens
-
+  - init: pip3 install -r requirements.txt
+    command: python3 snake.py
