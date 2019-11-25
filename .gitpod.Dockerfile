@@ -3,7 +3,8 @@ FROM gitpod/workspace-full-vnc
 USER root
 
 RUN apt-get update \
-    && apt-get install -y libgtk-3-dev
+    && apt-get install -y libgtk-3-dev \
+    && apt-get install python3-tk
 
 # Install custom tools, runtime, etc. using apt-get
 # For example, the command below would install "bastet" - a command line tetris clone:
