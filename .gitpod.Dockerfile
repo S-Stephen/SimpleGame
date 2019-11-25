@@ -4,7 +4,7 @@ USER root
 
 RUN apt-get update \
     && apt-get install -y libgtk-3-dev \
-    && ap-get install -y tk-dev \
+    && apt-get install -y tk-dev \
     && apt-get install -y python3-tk
 
 # Install custom tools, runtime, etc. using apt-get
